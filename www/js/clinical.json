@@ -320,7 +320,8 @@
               {"subtitle":"Paediatric Surgical Admission unit."},
              {"info1":"This is a day case unit only. Children who are not fit for discharge at the end of the day may be transferred to the ward for overnight observation."},
                             {"item":"<br>"},
-             {"info2":"Due to bed pressures there are often outlying patients on other wards, particularly in the winter. It is imperative that these patients are seen EVERY DAY on the ward round."}           
+             {"info2":"Due to bed pressures there are often outlying patients on other wards, particularly in the winter. It is imperative that these patients are seen EVERY DAY on the ward round."},
+             {"item":"<br>"}
          ]},
         
         {"title":"Ward Duties",
