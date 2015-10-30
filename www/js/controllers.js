@@ -42,10 +42,47 @@ angular.module('starter.controllers', [])
 })
 
 
+.controller('TodoListController',["$scope","NoteStore",function($scope,NoteStore){
+
+    
+    $scope.notes= NoteStore.list();
+    
+    $scope.remove = function(noteId){
+      NoteStore.remove(noteId);  
+    };
+    
+}])
+
+.controller('EditListController',["$scope", "NoteStore", "$state", "$stateParams", function($scope,NoteStore, $state, $stateParams){
+    
+    
+    var ID=$stateParams.noteId;
+    $scope.note = angular.copy(NoteStore.get(ID));
+    
+    $scope.save =function(){
+        NoteStore.update($scope.note);
+        $state.go('app.todolist')
+    };
+    
+
+}])
+
+.controller('AddListController',["$scope", "$state", "NoteStore", function($scope, $state , NoteStore){
+    $scope.note = {
+        id: new Date().getTime().toString(),
+        title: '',
+        description: ''
+        };
+    
+    $scope.save =function(){
+        NoteStore.create($scope.note);
+        $state.go('app.todolist')
+    };
+}])
 
 
 
-.controller('ListController',["$scope", "$http", "$state", function($scope, $http, $state){
+.controller('ListController',["$scope", "$http", "$state", "$stateParams", function($scope, $http, $state, $stateParams){
     
     $scope.data={
         hideImage: true,
@@ -55,7 +92,7 @@ angular.module('starter.controllers', [])
     $http.get('js/clinical.json')
         .success(function(data){
             $scope.clinicals=data.clinical;
-            $scope.whichCondition=$state.params.aId;
+            $scope.whichCondition=$stateParams.aId;
 
             $scope.admin=data.admin;
 
@@ -63,5 +100,30 @@ angular.module('starter.controllers', [])
     });
     
 
-}]);    
+}]);
 
+
+//
+//var notes=[];
+//
+//function getNote(noteId){
+//    for (var i=0; i<notes.length; i++){
+//        if (notes[i].id === noteId){
+//            return notes[i];
+//        }
+//    }
+//    return undefined;
+//};
+//
+//function updateNote(note){
+//    for (var i=0; i<notes.length; i++){
+//        if (notes[i].id === note.id){
+//            notes[i]=note;
+//            return;
+//        }
+//    }
+//};
+//
+//function createNote(note){
+//    notes.push(note);
+//};
