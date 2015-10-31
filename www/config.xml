@@ -1,0 +1,16 @@
+<?xml version ="1.0" encoding ="UTF-8" ?>
+<widget xmlns = "http://www3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id = "uk.co.lesterweb"
+        version ="1.0.0">
+    
+    <name>JCUH Handbook</name>
+    <description>
+        An ENT handbook for junior doctors in JCUH
+    </description>
+    
+    <author href="http://www.lesterweb.co.uk" email="shane_lester@hotmail.com">
+        Shane Lester
+    </author>
+    
+</widget>
