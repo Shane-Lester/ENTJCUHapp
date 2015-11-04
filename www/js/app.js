@@ -52,6 +52,17 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.notestore'])
         }
     })
   
+  
+   .state('app.about', {
+    url: '/about',
+    views: {
+      'handbook': {
+        templateUrl: 'templates/about.html',
+          controller: 'ListController'  
+      }
+    }
+  })
+  
   .state('app.detail',{
         url:'/clinical/:aId',
         views:{
