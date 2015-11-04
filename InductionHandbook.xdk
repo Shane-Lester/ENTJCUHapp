@@ -5,14 +5,15 @@
       "type": "Import",
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "",
-      "projectGuid": "df6fdb26-d24d-48a6-a402-da5febfbdbbb",
-      "lastModifiedDate": 1446582489403,
-      "creationDate": 1446236722547
+      "projectGuid": "cc209eac-252d-4217-8ed7-00bf185b367e",
+      "lastModifiedDate": 1446279071018,
+      "creationDate": 1446277757468
     },
-    "sourceDirectory": "",
+    "sourceDirectory": "www",
     "cordovaPluginsDirectory": "plugins",
     "gameAssetDirectory": "asset",
     "gameMetadata": {},
+    "testDirectory": "test",
     "startFile": "index.html",
     "projectTags": [],
     "projectFiles": {},
@@ -34,93 +35,13 @@
         "runtime_": "Cordova 3.x",
         "name_": "Android",
         "preferences_": {
-          "android-minSdkVersion": "10",
+          "android-minSdkVersion": "14",
           "android-targetSdkVersion": "19",
           "android-installLocation": "auto"
         },
         "isActive_": true,
-        "appName_": "Handbook",
-        "appID_": "uk.co.lesterweb.hanbook",
-        "appAccess_": {
-          "mode": "legacy",
-          "network": [
-            "*"
-          ],
-          "intents": [],
-          "navigation": []
-        },
-        "icons_": [
-          {
-            "relPath": "resources/android/icon/drawable-ldpi-icon.png",
-            "density": "ldpi",
-            "height": 36,
-            "width": 36
-          },
-          {
-            "relPath": "resources/android/icon/drawable-mdpi-icon.png",
-            "density": "mdpi",
-            "height": 48,
-            "width": 48
-          },
-          {
-            "relPath": "resources/android/icon/drawable-hdpi-icon.png",
-            "density": "hdpi",
-            "height": 72,
-            "width": 72
-          },
-          {
-            "relPath": "resources/android/icon/drawable-xhdpi-icon.png",
-            "density": "xhdpi",
-            "height": 96,
-            "width": 96
-          }
-        ],
-        "splashes_": [
-          {
-            "relPath": "resources/android/splash/drawable-port-mdpi-screen.png",
-            "density": "mdpi",
-            "height": 470,
-            "width": 320,
-            "orientation": "portrait"
-          },
-          {
-            "relPath": "resources/android/splash/drawable-port-hdpi-screen.png",
-            "density": "hdpi",
-            "height": 640,
-            "width": 480,
-            "orientation": "portrait"
-          },
-          {
-            "relPath": "resources/android/splash.png",
-            "density": "hdpi",
-            "height": 480,
-            "width": 640,
-            "orientation": "landscape"
-          }
-        ],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appVersion_": "0.0.1",
-        "appVersionCode_": "1",
-        "crosswalkVersion_": "11",
-        "cordovaCLIVersion_": "4.1.2",
-        "appDescription_": "ENT Handbook for JCUH junior doctors",
-        "appAuthor_": "Shane Lester"
-      },
-      "Android-Crosswalk": {
-        "platform_": "android",
-        "runtime_": "Crosswalk with Cordova 3.x",
-        "name_": "Android-Crosswalk",
-        "preferences_": {
-          "android-minSdkVersion": "14",
-          "android-targetSdkVersion": "19",
-          "android-installLocation": "auto",
-          "Fullscreen": true,
-          "Orientation": "portrait"
-        },
-        "isActive_": true,
-        "appName_": "Handbook",
-        "appID_": "uk.co.lesterweb.handbook",
+        "appName_": "InductionHandbook",
+        "appID_": "uk.co.lesterweb",
         "appAccess_": {
           "mode": "legacy",
           "network": [
@@ -135,10 +56,37 @@
         "excludedLibraries_": "",
         "appVersion_": "0.0.1",
         "appVersionCode_": "1",
-        "crosswalkVersion_": "11",
-        "cordovaCLIVersion_": "4.1.2",
-        "appDescription_": "ENT handbook for JCUH junior doctors",
-        "appAuthor_": "Shane Lester"
+        "crosswalkVersion_": "14",
+        "cordovaCLIVersion_": "4.1.2"
+      },
+      "Android-Crosswalk": {
+        "platform_": "android",
+        "runtime_": "Crosswalk with Cordova 3.x",
+        "name_": "Android-Crosswalk",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
+        },
+        "isActive_": true,
+        "appName_": "InductionHandbook",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appVersionCode_": "1",
+        "crosswalkVersion_": "14",
+        "cordovaCLIVersion_": "4.1.2"
       },
       "iOS": {
         "platform_": "ios",
@@ -147,11 +95,10 @@
         "preferences_": {
           "ios-target": "6",
           "ios-configuration": "adhoc",
-          "Fullscreen": true,
           "Orientation": "portrait"
         },
         "isActive_": true,
-        "appName_": "Handbook",
+        "appName_": "InductionHandbook",
         "appID_": "uk.co.lesterweb.handbook",
         "appAccess_": {
           "mode": "legacy",
@@ -161,76 +108,19 @@
           "intents": [],
           "navigation": []
         },
-        "icons_": [
-          {
-            "relPath": "resources/ios/icon/icon-60.png",
-            "height": 60,
-            "width": 60
-          },
-          {
-            "relPath": "resources/ios/icon/icon-76.png",
-            "height": 76,
-            "width": 76
-          },
-          {
-            "relPath": "resources/ios/icon/icon-76@2x.png",
-            "height": 152,
-            "width": 152
-          },
-          {
-            "relPath": "resources/ios/icon/icon-60@2x.png",
-            "height": 120,
-            "width": 120
-          },
-          {
-            "relPath": "resources/ios/icon/icon-60@3x.png",
-            "height": 180,
-            "width": 180
-          }
-        ],
-        "splashes_": [
-          {
-            "relPath": "resources/ios/splash/Default~iphone.png",
-            "height": 480,
-            "width": 320,
-            "orientation": "portrait"
-          },
-          {
-            "relPath": "resources/ios/splash/Default-568h@2x~iphone.png",
-            "height": 1136,
-            "width": 640,
-            "orientation": "portrait"
-          },
-          {
-            "relPath": "resources/ios/splash/Default@2x~iphone.png",
-            "height": 960,
-            "width": 640,
-            "orientation": "portrait"
-          },
-          {
-            "relPath": "resources/ios/splash/Default-736h.png",
-            "height": 2208,
-            "width": 1242,
-            "orientation": "portrait"
-          },
-          {
-            "relPath": "resources/ios/splash/Default-667h.png",
-            "height": 1334,
-            "width": 750,
-            "orientation": "portrait"
-          }
-        ],
+        "icons_": [],
+        "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "appVersion_": "0.0.1",
+        "appVersion_": "1.0.0",
         "cordovaCLIVersion_": "4.1.2",
         "iosProvs_": [
           {
-            "relPath": "ENT_handbook_XDK.mobileprovision",
+            "relPath": "ukcolesterwebhandbook.mobileprovision",
             "type": "adhoc"
           }
         ],
-        "appDescription_": "ENT handbook for JCUH junior doctors",
+        "appDescription_": "ENT induction handbook for JCUH doctors",
         "appAuthor_": "Shane Lester",
         "appVersionCode_": "1.0.0"
       },
@@ -239,8 +129,8 @@
         "runtime_": "Cordova 3.x",
         "name_": "Windows8",
         "preferences_": {},
-        "isActive_": false,
-        "appName_": "Handbook",
+        "isActive_": true,
+        "appName_": "InductionHandbook",
         "appID_": "not.yet.specified",
         "appAccess_": {
           "mode": "legacy",
@@ -262,8 +152,8 @@
         "runtime_": "W3C",
         "name_": "WebApp",
         "preferences_": {},
-        "isActive_": true,
-        "appName_": "Handbook",
+        "isActive_": false,
+        "appName_": "InductionHandbook",
         "appID_": "not.yet.specified",
         "appAccess_": {
           "mode": "legacy",
@@ -285,7 +175,7 @@
         "name_": "Firefox",
         "preferences_": {},
         "isActive_": false,
-        "appName_": "Handbook",
+        "appName_": "InductionHandbook",
         "appID_": "not.yet.specified",
         "appAccess_": {
           "mode": "legacy",
@@ -307,7 +197,7 @@
         "name_": "Chrome",
         "preferences_": {},
         "isActive_": false,
-        "appName_": "Handbook",
+        "appName_": "InductionHandbook",
         "appID_": "not.yet.specified",
         "appAccess_": {
           "mode": "legacy",
@@ -329,7 +219,7 @@
         "name_": "Facebook",
         "preferences_": {},
         "isActive_": false,
-        "appName_": "Handbook",
+        "appName_": "InductionHandbook",
         "appID_": "not.yet.specified",
         "appAccess_": {
           "mode": "legacy",
@@ -351,11 +241,13 @@
         "name_": "WP81",
         "preferences_": {},
         "isActive_": true,
-        "appName_": "Handbook",
+        "appName_": "InductionHandbook",
         "appID_": "not.yet.specified",
         "appAccess_": {
           "mode": "legacy",
-          "network": [],
+          "network": [
+            "*"
+          ],
           "intents": [],
           "navigation": []
         },
@@ -364,9 +256,8 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "appVersion_": "0.0.0.1",
-        "cordovaCLIVersion_": "5.1.1"
+        "cordovaCLIVersion_": "4.1.2"
       }
-    },
-    "testDirectory": "test"
+    }
   }
 }
